@@ -1,4 +1,4 @@
-public class Student {
+public class Student2 {
 
     protected String studenId;
     protected String studentNume;
@@ -21,9 +21,14 @@ public class Student {
         
         
     }
+    public void dropCourse(){
+        System.out.println("dropCourse");
+        
+        
+    }
 
-    public static void main(String [] args) {
-        Student yupa = new Student();
+    public static void main(String[] args) {
+        Student2 yupa = new Student2();
         System.out.println("Object = "+yupa);
         yupa.studenId = "614234009";
         yupa.studentNume = "yupa";
@@ -31,7 +36,7 @@ public class Student {
         yupa.Faculty = "Science and Technoloqy";
         
      
-        
+
         System.out.println("Object = "+yupa);
         yupa.studenId = "614234009";
         yupa.studentNume = "yupa";
@@ -40,7 +45,7 @@ public class Student {
         yupa.showData();
         yupa.enrollmant();
         yupa.dropCourse();
-     
+        
         
         yupa.studenId = "614234009";
         yupa.studentNume = "yupa";
@@ -48,11 +53,14 @@ public class Student {
         yupa.Faculty = "Science and Technoloqy";
         System.out.println("Object = "+yupa);
         yupa.showData();
-    }
+        
+        
+        //instanciate Object
+        GraduateStudent too = new GraduateStudent();
+        too.StudyLevl = "Year2";
+        too.thesisAdviser = "Dr.Bean";
+        too.thesisRxamination();
+        too.oralRxamination ();
 
-    void dropCourse() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-}//end class
+    }}
 
